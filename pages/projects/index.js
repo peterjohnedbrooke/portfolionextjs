@@ -47,9 +47,9 @@ export default function Projects({projects, projectsImg}) {
               md={2}
               lg={3}
               className="g-4">
-          {projects.map((project) => {
+          {projects.map((project, i) => {
             return (
-             <ProjectCard project={project} />
+             <ProjectCard key={i} project={project} />
             );
           })}
         </Row>
