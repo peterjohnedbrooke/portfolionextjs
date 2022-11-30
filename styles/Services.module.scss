@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+    .background {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        position: fixed;
+        filter: contrast(1.1);
+    }
+    
+    .pageWrapper {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+        padding: 2rem;
+        background-color: white;
+
+        
+    }
+}
+

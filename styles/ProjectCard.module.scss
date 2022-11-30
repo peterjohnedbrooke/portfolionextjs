@@ -1,0 +1,51 @@
+.card {
+    transition: all 500ms;
+    border-radius: 0px;
+    background-color: transparent;
+    
+  
+    .cardBack {
+      overflow: hidden;
+      margin: 1em;
+    }
+  
+    .cardBack img {
+      transition: transform .5s ease;
+      position: relative;
+      filter: contrast(115%);
+    }
+  
+    .cardBack:hover img {
+      opacity: 1;
+      transform: scale(1.2);
+      overflow: hidden;
+    }
+  
+    .imageOverlay {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 2s ease;
+      border-radius: 5px !important;
+    }
+
+    .overlayText {
+      font-size: 3vh;
+      color: var(--text-color-secondary);
+      align-self: center;
+    }
+  
+    .cardInfo {
+        margin: 1.5em;
+
+        p {
+            font-family: var(--text-font-body);
+        }
+
+        button {
+            padding: 0.5em;
+            background-color: transparent;
+            font-family: var(--text-font-body);
+        }
+    }
+}    

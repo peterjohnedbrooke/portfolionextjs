@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const URL = process.env.STRAPIBASEURL;
+
+module.exports = {
   reactStrictMode: true,
   swcMinify: true,
-}
-
-module.exports = nextConfig
+  images: {
+    
+    domains: ["localhost:1337"],
+  },
+};

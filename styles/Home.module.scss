@@ -1,0 +1,59 @@
+@import "../styles/Landing.module.scss";
+@import "../styles/NavBar.module.scss";
+@import "../styles/Work.module.scss";
+@import "../styles/About.module.scss";
+@import "../styles/Contact.module.scss";
+@import "../styles/Services.module.scss";
+@import "../styles/Gallery.module.scss";
+@import "../styles/ProjectCard.module.scss";
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+
+.landingTagline {
+  display: flex;
+  transform: rotate(-6deg);
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  // overflow: hidden;
+  width: 80vw;
+  
+
+  .textUpper {
+      color: white;
+      // text-shadow: 5px 5px aquamarine;
+     position: relative;
+  }
+
+  .textUpper, .textGradient {
+      font-size: 14vh;
+      letter-spacing: 0.5rem;
+      transform: skew(-10deg);
+      overflow: hidden;
+      
+  }
+
+  .textGradient {
+      position: absolute;
+      top: 4%;
+      background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      z-index: -1;
+  }
+}
+
+@media (max-width: 600px) {
+      .landingTagline {
+          // width: max-content;
+
+          .textUpper, .textGradient {
+              font-size: 6vh;
+          }
+      }    
+}

@@ -1,7 +1,25 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
+import App from "next/app";
+import NavBar from '../components/NavBar';
+import { useEffect } from 'react';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const URL = process.env.STRAPIBASEURL;
+
+function MyApp({ Component, pageProps, logos }) {
+  return (
+    <>
+      <NavBar logos={logos}/>
+      <Component {...pageProps} />
+    </>
+  )
 }
 
-export default MyApp
+MyApp.getInitialProps = async (appContext) => {
+  const appProps = await App.getInitialProps(appContext);
+
+  return {...appProps}
+
+}
+
+export default MyApp;
+

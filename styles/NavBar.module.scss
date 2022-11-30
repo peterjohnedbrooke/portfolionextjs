@@ -1,0 +1,282 @@
+.navWrapperScroll {
+    background-color: transparent;
+    height: 100px;
+    width: 100vw;
+    margin: auto auto;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navWrapper, .navWrapperScroll {
+    height: 100px;
+    width: 100vw;
+    margin: auto auto;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3em;
+    padding-right: 3em;
+    z-index: 999;
+    max-width: 100%;
+
+    .brand {
+        position: relative;
+        transition: margin-bottom 0.5s ease-in-out;
+        margin-bottom: 0px;
+
+        h5{
+            font-family: var(--text-brand-font);
+            // font-size: 4vh;
+            color: white;
+            letter-spacing: 0.3rem;
+            text-shadow: 2px 2px #7fffd4;
+        }
+    }
+
+    .brandMove {
+        position: relative;
+        transition: margin-bottom 0.5s ease-in-out;
+        margin-bottom: 150px;
+
+        h5{
+            font-family: var(--text-brand-font);
+            // font-size: 4vh;
+            color: white;
+            letter-spacing: 0.3rem;
+            text-shadow: 2px 2px #7fffd4;
+        }
+    }
+
+    .logoContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        transition: all 0.5s ease-in-out;
+
+        h4 {
+            font-size: 3vh;
+            height: fit-content;
+            color: var(--text-color-secondary);
+            letter-spacing: 0.1rem;
+        }
+    }
+
+    .logoContainerMove {
+        position: relative;
+        margin-bottom: 150px;
+        transition: margin-bottom 0.5s ease-in-out;
+
+        h4 {
+            font-size: 3vh;
+            height: fit-content;
+            color: var(--text-color-secondary);
+            letter-spacing: 0.1rem;
+        }
+    }
+
+    .navContainer {
+        z-index: 2;
+    }
+
+    .burgerIcon {
+        z-index: 2;
+        color: #84d6eb;
+        filter: contrast(200%);
+        background-color: white;
+        border-radius: 50%;
+        padding: 0.2rem;
+    }
+
+    .burgerIconCross {
+        filter: contrast(150%);
+        z-index: 2;
+        color: #c09bd8;
+        background-color: white;
+        border-radius: 50%;
+        padding: 0.2rem;
+    }
+
+    .burgerInner {
+        z-index: 999;
+    }
+
+    .navMenuActive {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: flex-start;
+        width: fit-content;
+        color: white;
+        height: 100vh;
+        width: 100vw;
+        transition: all 1.2s ease-in-out;
+        margin: 0;
+        justify-content: center;
+
+        .bg {
+            background-color: black;
+            opacity: 0.9;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+       
+
+        .listActive {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            list-style: none;
+            font-size: 8vh;
+            letter-spacing: 0.3rem;
+            color: var(--text-color-secondary) !important;
+            padding-left: 15rem;
+            transform: skew(-5deg);
+            line-height: 125%;
+
+            li {
+                color: var(--text-color-secondary) !important;
+                text-shadow: 2px 2px #7fffd4;
+                transition: all 0.5s ease-in-out;
+                
+            }
+
+            li:hover {
+                transform: scale(1.2);
+                transition: all 0.5s ease-in-out;
+            }
+        }
+
+        .iconsList {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 50vw;
+            margin: 0;
+            padding-left: 15rem;
+            color: var(--text-color-secondary);
+            font-size: 30px;
+            max-width: 400px;
+
+            .iconOne {
+                color: #84d6eb;
+            }
+
+            .iconTwo {
+                color: #7fffd4;
+            }
+            .iconThree {
+                color: #c09bd8;
+            }
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            
+            .logo {
+                background-image: url("/images/logo.png");
+                height: 120px;
+                width: 120px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin: 0;
+                padding: 0;
+            }
+            h5 {
+                font-family: var(--text-brand-font);
+                font-size: 3vh;
+                margin: 0;
+                margin-top: -20px;
+                color: var(--text-color-secondary);
+            }
+        }
+    }
+
+    .navMenuHidden {
+        position: fixed;
+        top: 0%;
+        left: -100%;
+        width: 100vw;
+        height: 100%;
+        transition: all 1.2s ease-in-out;
+
+        .bg {
+            top: 0%;
+            left: -100%;
+            width: 0%;
+            height: 100%;
+            transition: all 1s ease-in-out;
+        }
+
+        .listHidden {
+            display: none;
+            color: var(--text-color-secondary) !important;
+            transition: all 1s ease-in-out;
+
+            li {
+                color: var(--text-color-secondary) !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .navWrapper, .navWrapperScroll {
+        .brand, .brandMove {
+            h1 {
+                font-size: 2vh;
+            }
+        }
+
+        .navMenuActive {
+        .listActive {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 60%;
+            list-style: none;
+            font-size: 5vh;
+            letter-spacing: 0.3rem;
+            color: var(--text-color-secondary);
+            padding-left: 3rem;
+            transform: skew(-5deg);
+            line-height: 125%;
+
+            li {
+                text-shadow: 2px 2px #7fffd4;
+                transition: all 0.5s ease-in-out;
+                
+            }
+
+            li:hover {
+                transform: scale(1);
+                transition: all 0.5s ease-in-out;
+            }
+        }
+        .iconsList {
+            padding-left: 3rem;
+        }
+    }
+    }
+}
