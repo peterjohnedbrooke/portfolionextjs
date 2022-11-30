@@ -25,9 +25,9 @@
   
 
   .textUpper {
-      color: whitesmoke;
+        color: rgb(255, 248, 240);
       // text-shadow: 5px 5px aquamarine;
-      text-shadow: 2px 2px black;
+        text-shadow: 2px 2px rgb(39, 39, 39);
         position: relative;
   }
 
@@ -54,7 +54,7 @@
           // width: max-content;
 
           .textUpper, .textGradient {
-              font-size: 6vh;
+              font-size: 8vh;
           }
       }    
 }
