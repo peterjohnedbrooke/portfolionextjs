@@ -5,7 +5,6 @@ import Link from 'next/link'
 
 export default function ProjectCard({ project }) {
     const { title, slug, image, content, link } = project.fields
-    console.log(image[0].fields.file.url)
     return (
         <div className={styles.card}>
             <Card key={project.sys.id} className={`rounded-0 border-0 d-flex ${styles.cardBack}`}>

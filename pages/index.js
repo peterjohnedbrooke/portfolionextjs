@@ -24,7 +24,6 @@ export async function getStaticProps() {
 
 
 export default function Home({ landingImg}) {
-  console.log(landingImg)
   return (
     <div className={styles.wrapper}>
       <Landing landingImg={landingImg}/>

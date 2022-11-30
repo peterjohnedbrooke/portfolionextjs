@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 
 export default function Landing({ landingImg }) {
-    console.log(landingImg)
     return (
         <>
             <div className={styles.background} style={{ backgroundImage: `url(${'https:' + landingImg[0].fields.image.fields.file.url})` }}></div>

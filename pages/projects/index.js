@@ -29,7 +29,6 @@ export async function getStaticProps() {
 }
 
 export default function Projects({projects, projectsImg}) {
-  console.log(projectsImg[0].fields.projectsImage.fields.file.url)
   return (
     <div className={styles.wrapper}>
       <Head>
