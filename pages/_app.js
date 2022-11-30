@@ -2,6 +2,7 @@ import '../styles/globals.scss'
 import App from "next/app";
 import NavBar from '../components/NavBar';
 import { useEffect } from 'react';
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const URL = process.env.STRAPIBASEURL;
 

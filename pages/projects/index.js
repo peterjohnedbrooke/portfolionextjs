@@ -7,9 +7,9 @@ import Card from 'react-bootstrap/Card'
 import { createClient } from 'contentful'
 import ProjectCard from '../../components/ProjectCard';
 
-const myLoader = ({ src }) => {
-  return `http://localhost:1337${src}`;
-}
+// const myLoader = ({ src }) => {
+//   return `http://localhost:1337${src}`;
+// }
 
 export async function getStaticProps() {
   const client = createClient({
