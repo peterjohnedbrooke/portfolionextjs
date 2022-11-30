@@ -40,12 +40,14 @@
 
         p {
             font-family: var(--text-font-body);
+            color: var(--text-color-primary);
         }
 
         button {
             padding: 0.5em;
             background-color: transparent;
             font-family: var(--text-font-body);
+            color: var(--text-color-primary);
         }
     }
 }    
