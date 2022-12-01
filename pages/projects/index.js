@@ -34,8 +34,8 @@ export default function Projects({projects, projectsImg}) {
       <Head>
         <title>Services</title>
       </Head>
-      <div className={styles.background} style={{ backgroundImage: `url(${'https:' + projectsImg[0].fields.projectsImage.fields.file.url})` }}></div>
-      <div className={styles.pageWrapper}>
+      {/* <div className={styles.background} style={{ backgroundImage: `url(${'https:' + projectsImg[0].fields.projectsImage.fields.file.url})` }}></div> */}
+      <div className={styles.pageWrapper} style={{ backgroundImage: `url(${'https:' + projectsImg[0].fields.projectsImage.fields.file.url})` }}>
         <div className={styles.landingTagline}>
             <h1 className={styles.textUpper}>PROJECTS</h1>
             <h1 className={styles.textGradient}>PROJECTS</h1>
