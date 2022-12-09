@@ -5,7 +5,7 @@ import { useState } from 'react'
 export default function ProjectsListItem({item, index}) {
   const { title, slug, image, content, link } = item.fields
 
-  const [hasMoved, setHasMoved] = useState(true)
+  const [hasMoved, setHasMoved] = useState(false)
 
   const handleHover = (index) => {
     setHasMoved(!hasMoved)

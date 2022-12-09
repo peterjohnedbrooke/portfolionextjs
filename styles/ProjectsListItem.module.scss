@@ -2,6 +2,8 @@
     display: flex;
     position: relative;
     transition: all ease-in-out 1s;
+    width: max-content;
+    margin: 1em;
 
     a {
         .textUpper {
@@ -18,28 +20,29 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: all ease-in-out 1s;
-            transform: scale(1);
         }
 
         .textGradientMove {
             position: fixed;
-            top: 7%;
-            left: -25%;
+            top: 10%;
+            left: -1%;
             transition: all ease-in-out 1s;
             background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             z-index: -1;
-            transform: scale(2);
+            filter: contrast(200%);
+            width: max-content;
+
         }
 
         .textUpper, .textGradient, .textGradientMove {
             font-size: 10vh;
-            letter-spacing: 0.2rem;
+            letter-spacing: 1px;
             transform: skew(-15deg);
-            overflow: hidden;
-            color: white;
-            
+            overflow: hidden;        
+            width: max-content; 
+            transition: all ease-in-out 1s;   
         }
     }
 }
@@ -49,6 +52,12 @@
 }
 .listItemMove {
     transform: rotate(0deg);
+    transform: scale(1.2,1.2);
+
+    .textUpper {
+        text-shadow: 2px 2px rgb(39, 39, 39);
+    }
+    
 }
 
 .listItem:nth-child(odd) {
@@ -57,4 +66,14 @@
   
 .listItem:nth-child(even) {
     margin-right: 40px;
+}
+
+@media (max-width: 600px) {
+    .listItem, .listItemMove {
+        a {
+            .textUpper, .textGradient, .textGradientMove {
+                font-size: 6vh;
+            }
+        }
+    }    
 }
