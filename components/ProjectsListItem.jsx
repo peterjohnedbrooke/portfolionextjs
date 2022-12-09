@@ -9,7 +9,6 @@ export default function ProjectsListItem({item, index}) {
 
   const handleHover = (index) => {
     setHasMoved(!hasMoved)
-    console.log(hasMoved)
   }
 
   return (

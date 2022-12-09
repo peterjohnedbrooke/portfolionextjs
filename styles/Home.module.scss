@@ -45,12 +45,22 @@
       top: 3%;
       background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       z-index: -1;
   }
 }
 
 @media (max-width: 600px) {
+      .landingTagline {
+          // width: max-content;
+
+          .textUpper, .textGradient {
+              font-size: 8vh;
+          }
+      }    
+}
+@media (max-width: 480px) {
       .landingTagline {
           // width: max-content;
 

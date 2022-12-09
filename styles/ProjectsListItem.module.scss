@@ -4,12 +4,9 @@
     transition: all ease-in-out 1s;
     width: max-content;
     margin: 1em;
+    height: max-content;
 
     a {
-        .textUpper {
-            // color: rgb(255, 248, 240);
-            // text-shadow: 2px 2px rgb(39, 39, 39);
-        } 
 
         .textGradient {
             position: fixed;
@@ -18,6 +15,7 @@
             z-index: -1;
             background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: all ease-in-out 1s;
         }
@@ -25,21 +23,23 @@
         .textGradientMove {
             position: fixed;
             top: 10%;
-            left: -1%;
+            left: 0%;
             transition: all ease-in-out 1s;
             background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             z-index: -1;
             filter: contrast(200%);
             width: max-content;
+            filter: blur(200%);
 
         }
 
         .textUpper, .textGradient, .textGradientMove {
             font-size: 10vh;
             letter-spacing: 1px;
-            transform: skew(-15deg);
+            transform: skew(-10deg);
             overflow: hidden;        
             width: max-content; 
             transition: all ease-in-out 1s;   
@@ -48,13 +48,15 @@
 }
 
 .listItem{
-    transform: rotate(-6deg);
+    transform: rotate(0deg);
 }
 .listItemMove {
     transform: rotate(0deg);
     transform: scale(1.2,1.2);
+    filter: blur(200%);
 
     .textUpper {
+        filter: blur(350%);
         text-shadow: 2px 2px rgb(39, 39, 39);
     }
     
@@ -75,5 +77,18 @@
                 font-size: 6vh;
             }
         }
+    }    
+}
+@media (max-width: 480px) {
+    .listItem, .listItemMove {
+        a {
+            .textUpper, .textGradient, .textGradientMove {
+                font-size: 5vh;
+            }
+        }
+    }
+    .listItemMove {
+        transform: scale(1.1,1.1);
+    
     }    
 }
