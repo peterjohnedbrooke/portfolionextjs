@@ -17,14 +17,12 @@
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            transition: all ease-in-out 1s;
         }
 
         .textGradientMove {
             position: fixed;
             top: 10%;
             left: 0%;
-            transition: all ease-in-out 1s;
             background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
             -webkit-background-clip: text;
             background-clip: text;
@@ -42,7 +40,7 @@
             transform: skew(-10deg);
             overflow: hidden;        
             width: max-content; 
-            transition: all ease-in-out 1s;   
+            transition: all ease-in-out 0.3s;   
         }
     }
 }
