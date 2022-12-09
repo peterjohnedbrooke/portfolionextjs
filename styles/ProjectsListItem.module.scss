@@ -1,0 +1,58 @@
+.listItem, .listItemMove {
+    display: flex;
+    position: relative;
+    transition: all ease-in-out 1s;
+
+    a {
+        .textUpper {
+            // color: rgb(255, 248, 240);
+            // text-shadow: 2px 2px rgb(39, 39, 39);
+        } 
+
+        .textGradient {
+            position: fixed;
+            top: 7%;
+            left: 0%;
+            z-index: -1;
+            background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all ease-in-out 1s;
+        }
+
+        .textGradientMove {
+            position: fixed;
+            top: 7%;
+            left: -25%;
+            transition: all ease-in-out 1s;
+            background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            z-index: -1;
+        }
+
+        .textUpper, .textGradient, .textGradientMove {
+            font-size: 10vh;
+            letter-spacing: 0.2rem;
+            transform: skew(-15deg);
+            overflow: hidden;
+            color: white;
+            
+        }
+    }
+}
+
+.listItem{
+    transform: rotate(-6deg);
+}
+.listItemMove {
+    transform: rotate(0deg);
+}
+
+.listItem:nth-child(odd) {
+    margin-left: 40px;
+}
+  
+.listItem:nth-child(even) {
+    margin-right: 40px;
+}

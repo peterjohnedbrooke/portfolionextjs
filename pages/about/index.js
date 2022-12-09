@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import styles from "../../styles/Home.module.scss"
 
 export default function About() {
   return (
@@ -7,7 +8,7 @@ export default function About() {
       <Head>
         <title>About</title>
       </Head>
-        <h1>About</h1>
+       
     </div>
   )
 }
