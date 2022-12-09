@@ -47,7 +47,7 @@ export default function Projects({projects, projectsImg}) {
                 {data.map((item, index) => {
                   const { title, slug, image, content, link } = item.fields
                   return (
-                    <ProjectsListItem  item={item} index={index} />
+                    <ProjectsListItem key={index} item={item} index={index} />
                   );
                 })}
               </ul>
