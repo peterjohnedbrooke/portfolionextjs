@@ -64,18 +64,12 @@ export default function NavBar({ logos }) {
                     <li>
                         <Link href="/" onClick={handleExit}>Home</Link>
                     </li>
-                    {/* <li>
-                        <Link href="/work" onClick={handleExit}>Work</Link>
-                    </li> */}
                     <li>
                         <Link href="/projects" onClick={handleExit}>Projects</Link>
                     </li>
                     <li>
                         <Link href="/about" onClick={handleExit}>About</Link>
                     </li>
-                    {/* <li>
-                        <Link href="gallery" onClick={handleExit}>Gallery</Link>
-                    </li> */}
                     <li>
                         <Link href="contact" onClick={handleExit}>Contact</Link>
                     </li>

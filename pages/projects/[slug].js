@@ -1,28 +1,46 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { createClient } from 'contentful'
+import styles from '../../styles/Home.module.scss'
+import ProjectCard from "../../components/ProjectCard";
 
-const URL = process.env.STRAPIBASEURL;
+const client = createClient({
+  space: process.env.CONTENTFUL_SPACE_ID  ,
+  accessToken: process.env.CONTENTFUL_ACCESS_ID
+});
 
-export default function Project() {
+export async function getStaticPaths() {
+  const res = await client.getEntries({ content_type: 'project'})
+
+  const paths = res.items.map((item => {
+    return {
+      params: {slug: item.fields.slug}
+    }
+  }))
+
+  return {
+    paths, 
+    fallback: false
+  }
+}
+
+export async function getStaticProps({params}) {
+  const { items } = await client.getEntries({ content_type: 'project', 'fields.slug': params.slug})
+
+  return {
+    props: {project: items[0]}
+  }
+}
+
+export default function Project({project}) {
     return (
-      <div>
+      <div className={styles.projectWrapper}>
         <Head>
         </Head>
-        <h2>Hello project page</h2>
+        <div className={styles.projectContent}>
+          <ProjectCard project={project} />
+        </div>
       </div>
     );
-  
-//   if (!!artist) {
-//     return (
-//       <div>
-//         <Head>
-         
-//         </Head>
-       
-//         <h2>Hello project page</h2>
-//       </div>
-//     );
-//   }
-//   return null;
 }

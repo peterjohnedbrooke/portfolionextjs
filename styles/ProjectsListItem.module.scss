@@ -28,19 +28,21 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             z-index: -1;
-            filter: contrast(200%);
+            // filter: contrast(200%);
             width: max-content;
-            filter: blur(200%);
-
         }
 
         .textUpper, .textGradient, .textGradientMove {
-            font-size: 10vh;
+            font-size: 5vh;
             letter-spacing: 1px;
             transform: skew(-10deg);
             overflow: hidden;        
             width: max-content; 
             transition: all ease-in-out 0.3s;   
+        }
+
+        .textUpper {
+            color: rgb(255, 248, 240);
         }
     }
 }
@@ -51,28 +53,26 @@
 .listItemMove {
     transform: rotate(0deg);
     transform: scale(1.2,1.2);
-    filter: blur(200%);
 
     .textUpper {
-        filter: blur(350%);
         text-shadow: 2px 2px rgb(39, 39, 39);
     }
     
 }
 
 .listItem:nth-child(odd) {
-    margin-left: 40px;
+    margin-right: 40px;
 }
   
 .listItem:nth-child(even) {
-    margin-right: 40px;
+    margin-left: 80px;
 }
 
 @media (max-width: 600px) {
     .listItem, .listItemMove {
         a {
             .textUpper, .textGradient, .textGradientMove {
-                font-size: 6vh;
+                font-size: 4vh;
             }
         }
     }    

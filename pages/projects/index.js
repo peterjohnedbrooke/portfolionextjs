@@ -8,9 +8,6 @@ import { createClient } from 'contentful'
 import ProjectCard from '../../components/ProjectCard';
 import ProjectsListItem from '../../components/ProjectsListItem';
 
-// const myLoader = ({ src }) => {
-//   return `http://localhost:1337${src}`;
-// }
 
 export async function getStaticProps() {
   const client = createClient({
@@ -32,6 +29,8 @@ export async function getStaticProps() {
 export default function Projects({projects, projectsImg}) {
   const [data, setData] = useState(projects);
 
+  const reverseProjects = data.map((item) => item).reverse();
+
   return (
     <div className={styles.wrapper}>
       <Head>
@@ -44,7 +43,7 @@ export default function Projects({projects, projectsImg}) {
                   <h1 className={styles.textGradient}>PROJECTS</h1>
               </div>
               <ul>
-                {data.map((item, index) => {
+                {reverseProjects.map((item, index) => {
                   const { title, slug, image, content, link } = item.fields
                   return (
                     <ProjectsListItem key={index} item={item} index={index} />

@@ -17,7 +17,7 @@ export default function ProjectCard({ project }) {
             <div className={styles.cardInfo}>
                 <h2>{project.fields.title}</h2>
                 <p>Anim in dolor et pariatur magna sint enim nostrud eu cupidatat in. Sint ullamco ullamco amet do ut nulla dolore. Labore deserunt id consectetur et eu est esse ullamco consectetur ad ullamco ullamco. Incididunt ex anim cillum ut ex ad ad quis laborum. Lorem id tempor incididunt tempor cupidatat aliquip et.</p>
-                <Link href={'/projects/' + slug}>
+                <Link href={link} target="_blank" rel="noopener noreferrer">
                     <button>View</button>
                 </Link>
             </div>
