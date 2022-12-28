@@ -1,37 +1,27 @@
 .pageWrapper {
-    height: 100%;
+    background-color: black;
     width: 100%;
     display: flex;
     align-items:center;
     justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    // flex-direction: column;
+    margin: 0 auto;
 
-    .pageContainer {
-        height: auto;
-        width: 80vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .content {
+        // position: relative;
+        padding-top: 150px;
 
         .textGradient {
-            top: 6%;
+            top: 7%;
         }
         
 
         ul {
             list-style: none;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 80%;
-            width: 100%;
-            // overflow-y: auto;
+            display: grid;
+            gap: 2rem;
+            position: relative;
         }
     }
 }    

@@ -1,6 +1,6 @@
 .navWrapperScroll {
     background-color: transparent;
-    height: 100px;
+    height: 150px;
     width: 100vw;
     margin: auto auto;
     position: fixed;
@@ -10,15 +10,14 @@
     
 }
 .navWrapper, .navWrapperScroll {
-    height: 100px;
+    height: 150px;
     width: 100vw;
     margin: auto auto;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding: 3em;
     z-index: 999;
     max-width: 100%;
 
@@ -39,7 +38,7 @@
     .brandMove {
         position: relative;
         transition: margin-bottom 0.5s ease-in-out;
-        margin-bottom: 150px;
+        margin-bottom: 200px;
 
         h5{
             font-family: var(--text-brand-font);
