@@ -11,7 +11,7 @@
 
         .textGradient {
             position: fixed;
-            top: 7%;
+            top: 0%;
             left: 0%;
             z-index: -1;
             background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
@@ -22,8 +22,8 @@
 
         .textGradientMove {
             position: fixed;
-            top: 60%;
-            left: -30%;
+            top: 0%;
+            left: 20%;
             background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
             -webkit-background-clip: text;
             background-clip: text;
@@ -37,7 +37,6 @@
         .textUpper, .textGradient, .textGradientMove {
             font-size: 100px;
             letter-spacing: 1px;
-            transform: skew(-10deg);
             overflow: hidden;        
             width: max-content; 
             transition: all ease-in-out 0.6s;   
@@ -55,27 +54,18 @@
 }
 .listItemMove {
     transform: rotate(0deg);
-    transform: scale(1.1,1.1);
 
     .textUpper {
         position: relative;
-        // text-shadow: 2px 2px rgb(39, 39, 39);
-        // top: -10%;
         transition: all ease-in-out 0.5s;
         transform: translateX(20rem);
         transform: translateY(20rem);
-
+        filter: contrast(0);
+        opacity: 0;
     }
     
 }
 
-// .listItem:nth-child(odd) {
-//     margin-right: 40px;
-// }
-  
-// .listItem:nth-child(even) {
-//     margin-left: 80px;
-// }
 
 @media (max-width: 600px) {
     .listItem, .listItemMove {

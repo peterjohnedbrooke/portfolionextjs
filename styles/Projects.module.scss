@@ -9,19 +9,17 @@
     margin: 0 auto;
 
     .content {
-        // position: relative;
         padding-top: 150px;
-
-        .textGradient {
-            top: 7%;
-        }
-        
+        display: flex;
+        align-items: flex-start;
+        width: 80%;
+        position: relative;
 
         ul {
             list-style: none;
             display: grid;
             gap: 2rem;
-            position: relative;
+            padding: 0;
         }
     }
 }    
