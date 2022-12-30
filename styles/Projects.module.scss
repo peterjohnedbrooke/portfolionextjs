@@ -12,7 +12,7 @@
         padding-top: 150px;
         display: flex;
         align-items: flex-start;
-        width: 80%;
+        width: 90%;
         position: relative;
 
         ul {
@@ -24,6 +24,18 @@
     }
 }    
 
+@media (max-width: 480px) {
+    .pageWrapper {
+        .content {
+            padding-top: 300px;
+
+            ul {
+                margin: 1em;
+                gap: 5rem;
+            }
+        }
+    }   
+}
 
 
 
