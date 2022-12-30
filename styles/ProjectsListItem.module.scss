@@ -45,6 +45,8 @@
         .textUpper {
             // color: rgb(255, 248, 240);
             transition: all ease-in-out 0.5s;
+            text-shadow: 2px 2px black;
+
         }
     }
 }
@@ -71,7 +73,7 @@
     .listItem, .listItemMove {
         a {
             .textUpper, .textGradient, .textGradientMove {
-                font-size: 4vh;
+                font-size: 6vh;
             }
         }
     }    
@@ -80,7 +82,7 @@
     .listItem, .listItemMove {
         a {
             .textUpper, .textGradient, .textGradientMove {
-                font-size: 5vh;
+                font-size: 4vh;
             }
         }
     }

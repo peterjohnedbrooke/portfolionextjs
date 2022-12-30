@@ -56,29 +56,28 @@ export default function NavBar({ logos }) {
             </div>
             <div className={click ? `${styles.navMenuActive} ` : `${styles.navMenuHidden} `}>
                 <div className={styles.bg}></div>
-                {/* <div className={styles.brand}>
-                    <div className={styles.logo}></div>
-                    <h5>Iconiks</h5>
-                </div> */}
-                <ul className={click ? `${styles.listActive} ` : `${styles.listHidden} `}>
-                    <li>
-                        <Link href="/" onClick={handleExit}>Home</Link>
-                    </li>
-                    <li>
-                        <Link href="/projects" onClick={handleExit}>Projects</Link>
-                    </li>
-                    <li>
-                        <Link href="/about" onClick={handleExit}>About</Link>
-                    </li>
-                    <li>
-                        <Link href="contact" onClick={handleExit}>Contact</Link>
-                    </li>
-                </ul>
-                <ul className={styles.iconsList}>
-                    <li><i className={`bi bi-linkedin ${styles.iconOne} `}></i></li>
-                    <li><i className={`bi bi-instagram ${styles.iconTwo} `}></i></li>
-                    <li><i className={`bi bi-envelope ${styles.iconThree} `}></i></li>
-                </ul>
+                <div>
+                    <ul className={click ? `${styles.listActive} ` : `${styles.listHidden} `}>
+                        <li>
+                            <Link href="/" onClick={handleExit}>Home</Link>
+                        </li>
+                        <li>
+                            <Link href="/projects" onClick={handleExit}>Projects</Link>
+                        </li>
+                        <li>
+                            <Link href="/about" onClick={handleExit}>About</Link>
+                        </li>
+                        <li>
+                            <Link href="contact" onClick={handleExit}>Contact</Link>
+                        </li>
+                    </ul>
+                    <ul className={styles.iconsList}>
+                        <li><i className={`bi bi-linkedin ${styles.iconOne} `}></i></li>
+                        <li><i className={`bi bi-instagram ${styles.iconTwo} `}></i></li>
+                        <li><i className={`bi bi-envelope ${styles.iconThree} `}></i></li>
+                    </ul>
+                </div>
+                
             </div>
         </div>
     )

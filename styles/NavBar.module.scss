@@ -117,7 +117,7 @@
         display: flex;
         flex-direction: column;
         list-style: none;
-        align-items: flex-start;
+        align-items: center;
         width: fit-content;
         color: white;
         height: 100vh;
@@ -139,56 +139,59 @@
             right: 0;
         }
 
+        div {
+            width: 80%;
+            .listActive {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                list-style: none;
+                font-size: 12vh;
+                letter-spacing: 0.3rem;
+                color: var(--text-color-secondary) !important;
+    
+                li {
+                    color: var(--text-color-secondary) !important;
+                    text-shadow: 2px 2px #7fffd4;
+                    transition: all 0.5s ease-in-out;
+                    
+                }
+    
+                li:hover {
+                    transform: scale(1.2);
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+    
+            .iconsList {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                align-items: flex-end;
+                justify-content: space-between;
+                width: 30%;
+                margin: 0;
+                // padding-left: 15rem;
+                color: var(--text-color-secondary);
+                font-size: 30px;
+                max-width: 400px;
+                padding-top: 2rem;
+    
+                .iconOne {
+                    color: #84d6eb;
+                }
+    
+                .iconTwo {
+                    color: #7fffd4;
+                }
+                .iconThree {
+                    color: #c09bd8;
+                }
+            }
+        }
        
 
-        .listActive {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            list-style: none;
-            font-size: 12vh;
-            letter-spacing: 0.3rem;
-            color: var(--text-color-secondary) !important;
-            padding-left: 15rem;
-            transform: skew(-5deg);
 
-            li {
-                color: var(--text-color-secondary) !important;
-                text-shadow: 2px 2px #7fffd4;
-                transition: all 0.5s ease-in-out;
-                
-            }
-
-            li:hover {
-                transform: scale(1.2);
-                transition: all 0.5s ease-in-out;
-            }
-        }
-
-        .iconsList {
-            display: flex;
-            flex-direction: row;
-            list-style-type: none;
-            align-items: flex-end;
-            justify-content: space-between;
-            width: 50vw;
-            margin: 0;
-            padding-left: 15rem;
-            color: var(--text-color-secondary);
-            font-size: 30px;
-            max-width: 400px;
-
-            .iconOne {
-                color: #84d6eb;
-            }
-
-            .iconTwo {
-                color: #7fffd4;
-            }
-            .iconThree {
-                color: #c09bd8;
-            }
-        }
 
         .brand {
             display: flex;
@@ -233,13 +236,15 @@
             transition: all 1s ease-in-out;
         }
 
-        .listHidden {
-            display: none;
-            color: var(--text-color-secondary) !important;
-            transition: all 1s ease-in-out;
-
-            li {
+        div {
+            .listHidden {
+                display: none;
                 color: var(--text-color-secondary) !important;
+                transition: all 1s ease-in-out;
+    
+                li {
+                    color: var(--text-color-secondary) !important;
+                }
             }
         }
     }
@@ -254,33 +259,32 @@
         }
 
         .navMenuActive {
-        .listActive {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            // height: 40%;
-            list-style: none;
-            font-size: 10vh;
-            letter-spacing: 0.3rem;
-            color: var(--text-color-secondary);
-            padding-left: 3rem;
-            transform: skew(-5deg);
-            line-height: 125%;
+            div {
+                .listActive {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    // height: 40%;
+                    list-style: none;
+                    font-size: 7vh;
+                    letter-spacing: 0.3rem;
+                    color: var(--text-color-secondary);
 
-            li {
-                text-shadow: 2px 2px #7fffd4;
-                transition: all 0.5s ease-in-out;
-                
-            }
+                    li {
+                        text-shadow: 2px 2px #7fffd4;
+                        transition: all 0.5s ease-in-out;
+                        
+                    }
 
-            li:hover {
-                transform: scale(1);
-                transition: all 0.5s ease-in-out;
-            }
-        }
-        .iconsList {
-            padding-left: 3rem;
-        }
+                    li:hover {
+                        transform: scale(1);
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+                .iconsList {
+                    width: 50%;
+                }
+       }
     }
     }
 }
