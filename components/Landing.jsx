@@ -9,8 +9,8 @@ export default function Landing({ landingImg }) {
             <div className={styles.background} style={{ backgroundImage: `url(${'https:' + landingImg[0].fields.image.fields.file.url})` }}></div>
             <div className={styles.landingWrapper} >
                 <div className={styles.landingTagline}>
-                    <h1 className={styles.textUpper}>CREATIVE DESIGN ONLINE</h1>
-                    <h1 className={styles.textGradient}>CREATIVE DESIGN ONLINE</h1>
+                    <h1 className={styles.textUpper}>Creative Design Online</h1>
+                    <h1 className={styles.textGradient}>Creative Design Online</h1>
                 </div>
             </div>
         </>

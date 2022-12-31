@@ -38,7 +38,7 @@
         .textUpper, .textGradient, .textGradientMove {
             font-size: 100px;
             letter-spacing: 1px;
-            overflow: hidden;        
+            // overflow: hidden;        
             width: max-content; 
             transition: all ease-in-out 0.6s;   
         }
