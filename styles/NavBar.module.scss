@@ -85,21 +85,22 @@
 
     .burgerIcon {
         z-index: 2;
-        color: #84d6eb;
+        color: #32373B;
         text-shadow: 2px 2px black;
-        filter: contrast(200%);
+        // filter: contrast(200%);
         background-color: rgb(255, 248, 240);
         border-radius: 50%;
-        border: 1px solid #84d6eb;
+        border: 5px solid #32373B;
         padding: 0.2rem;
     }
 
     .burgerIconCross {
-        filter: contrast(150%);
+        // filter: contrast(150%);
         z-index: 2;
-        color: #c09bd8;
+        color: #F7996E;
         background-color: rgb(255, 248, 240);
         border-radius: 50%;
+        border: 5px solid #F7996E;
         padding: 0.2rem;
     }
 
@@ -179,14 +180,14 @@
                 padding-top: 2rem;
     
                 .iconOne {
-                    color: #84d6eb;
+                    color: rgb(255, 244, 231);
                 }
     
                 .iconTwo {
-                    color: #7fffd4;
+                    color: rgb(255, 244, 231);
                 }
                 .iconThree {
-                    color: #c09bd8;
+                    color: rgb(255, 244, 231);
                 }
             }
         }

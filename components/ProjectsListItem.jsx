@@ -17,7 +17,7 @@ export default function ProjectsListItem({item, index}) {
         <li key={index} className={!!hasMoved ? `${styles.listItemMove}` : `${styles.listItem}`} onMouseEnter={(e) => handleHover(index)} onMouseLeave={(e) => handleHover(index)}>
             <Link href={"projects/" + slug}>
                 <h2 className={styles.textUpper}>{item.fields.title}</h2>
-                <h2 className={!!hasMoved ? `${styles.textGradientMove}` : `${styles.textGradient}`}>{item.fields.title}</h2>
+                <h2 className={!!hasMoved ? `${styles.textGradientMove}` : `${styles.textGradientStatic}`}>{item.fields.title}</h2>
             </Link> 
         </li>
     </>

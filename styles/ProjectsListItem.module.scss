@@ -9,23 +9,20 @@
 
     a {
 
-        .textGradient {
+        .textGradientStatic {
             position: fixed;
             top: 0%;
             left: 0%;
             z-index: -1;
-            color: black;
-            // background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
-            // -webkit-background-clip: text;
-            // background-clip: text;
-            // -webkit-text-fill-color: transparent;
+            color: #AFD2E9;
+            
         }
 
         .textGradientMove {
             position: fixed;
             top: 0%;
             left: 20%;
-            color: black;
+            color: #AFD2E9;
             // background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
             // -webkit-background-clip: text;
             // background-clip: text;
@@ -35,7 +32,7 @@
             width: max-content;
         }
 
-        .textUpper, .textGradient, .textGradientMove {
+        .textUpper, .textGradientStatic, .textGradientMove {
             font-size: 100px;
             letter-spacing: 1px;
             // overflow: hidden;        
@@ -44,9 +41,9 @@
         }
 
         .textUpper {
-            // color: rgb(255, 248, 240);
+            color: #32373B;
             transition: all ease-in-out 0.5s;
-            text-shadow: 2px 2px black;
+            text-shadow: 4px 4px #AFD2E9;
 
         }
     }

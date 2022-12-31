@@ -13,13 +13,13 @@ export default function About() {
           <div className={styles.pageHeading}>
             <h1>About</h1>
           </div>
-          <div className={styles.tileGrid}>
+          {/* <div className={styles.tileGrid}>
             <div className={styles.tileOne}>
               <h2>Hi, I'm Peter</h2>
             </div>
             <div className={styles.tileTwo}></div>
             <div className={styles.tileThree}></div>
-          </div>
+          </div> */}
         </div>
        </div>
     </>

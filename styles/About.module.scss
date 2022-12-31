@@ -1,5 +1,5 @@
 .aboutWrapper {
-    background-color:#84d6eb;
+    background-color: #fafaf2;
     width: 100%;
     display: flex;
     align-items:center;
@@ -18,13 +18,16 @@
         position: relative;
         height: 90%;
         justify-content: space-evenly;
+        max-width: 1280px;
+
 
         .pageHeading {
             transform: rotate(-6deg);
 
             h1 {
                 // font-family: var(--text-font-body);
-                text-shadow: 4px 4px white;
+                color: #32373B;
+                text-shadow: 4px 4px #AFD2E9;
                 transform: skew(-10deg);
             }    
         }
@@ -35,27 +38,26 @@
             width: 100%;
             gap: 2rem;
 
+           
+
             .tileOne {
                 background-color: orange;
+
+                h2 {
+                    // padding-left: 5em;
+                    font-family: var(--text-font-body);
+                    color: white;
+                    width: 80%;
+                    letter-spacing: 5px;
+                }
             }
-            .tileTwo {
-                background-color: aquamarine;
-            }
-            .tileThree {
-                background-color: bisque;
-            }
+            
 
             .tileOne, .tileTwo, .tileThree {
                 height: 300px;
             }
         }
 
-        h3 {
-            // padding-left: 5em;
-            font-family: var(--text-font-body);
-            color: white;
-            width: 80%;
-            letter-spacing: 5px;
-        }
+        
 }
 }
