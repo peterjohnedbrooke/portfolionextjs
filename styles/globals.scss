@@ -7,14 +7,16 @@ body {
   margin: 0;
   font-family: var(--text-font-header) !important;
   --text-font-header: 'Righteous', cursive;
-  --text-font-body: 'Oswald', sans-serif;
+  // --text-font-header: 'Quicksand', sans-serif;
+  // --text-font-body: 'Oswald', sans-serif;
+  --text-font-body: 'Source Sans Pro', sans-serif;
   --text-color-secondary: white !important;
   --text-color-primary: black !important;
   scroll-behavior: smooth;
 }
 
-h1, h2 {
-  // line-height: 50px;
+h1 {
+  font-size: 15vh;
 }
 
 a {

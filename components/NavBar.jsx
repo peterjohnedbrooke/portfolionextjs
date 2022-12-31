@@ -67,9 +67,9 @@ export default function NavBar({ logos }) {
                         <li>
                             <Link href="/about" onClick={handleExit}>About</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link href="contact" onClick={handleExit}>Contact</Link>
-                        </li>
+                        </li> */}
                     </ul>
                     <ul className={styles.iconsList}>
                         <li><i className={`bi bi-linkedin ${styles.iconOne} `}></i></li>
