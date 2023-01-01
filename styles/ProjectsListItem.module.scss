@@ -70,7 +70,7 @@
 @media (max-width: 600px) {
     .listItem, .listItemMove {
         a {
-            .textUpper, .textGradient, .textGradientMove {
+            .textUpper, .textGradientStatic, .textGradientMove {
                 font-size: 6vh;
             }
         }
@@ -79,7 +79,7 @@
 @media (max-width: 480px) {
     .listItem, .listItemMove {
         a {
-            .textUpper, .textGradient, .textGradientMove {
+            .textUpper, .textGradientStatic, .textGradientMove {
                 font-size: 5vh;
             }
         }
