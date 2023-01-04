@@ -34,16 +34,17 @@
 
   .textUpper, .textGradient {
       font-size: 14vh;
-      // letter-spacing: 0.5rem;
+      letter-spacing: 0.5rem;
       transform: skew(-10deg);
-      // overflow: hidden;
+      overflow: hidden;
+      width: min-content;
       // font-weight: 600;
   }
 
   .textGradient {
       position: fixed;
-      top: 3%;
-      left: -1%;
+      top: 5%;
+      left:0.5%;
       background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
       -webkit-background-clip: text;
       background-clip: text;
