@@ -27,11 +27,11 @@
         margin-bottom: 0px;
 
         h5{
-            font-family: var(--text-brand-font);
-            // font-size: 4vh;
-            color: rgb(255, 248, 240);
             letter-spacing: 0.3rem;
-            text-shadow: 2px 2px #7fffd4;
+        }
+
+        h4 {
+            font-size: 40px;
         }
     }
 
@@ -41,12 +41,13 @@
         margin-bottom: 200px;
 
         h5{
-            font-family: var(--text-brand-font);
-            // font-size: 4vh;
             color: rgb(255, 248, 240);
-
             letter-spacing: 0.3rem;
             text-shadow: 4px 2px black;
+        }
+
+        h4 {
+            font-size: 40px;
         }
     }
 
@@ -85,23 +86,20 @@
 
     .burgerIcon {
         z-index: 2;
-        color: #32373B;
+        color: white;
         text-shadow: 2px 2px black;
-        // filter: contrast(200%);
-        background-color: rgb(255, 248, 240);
+        background-color: #fa1484;
         border-radius: 50%;
-        border: 5px solid #32373B;
         padding: 0.2rem;
+        // border: 2px solid #fa1484;
     }
 
     .burgerIconCross {
-        // filter: contrast(150%);
         z-index: 2;
-        color: #c09bd8;
-        background-color: rgb(255, 248, 240);
+        color: white;
         border-radius: 50%;
-        border: 5px solid #c09bd8;
         padding: 0.2rem;
+        background-color: #fa1484;
     }
 
     .burgerInner {
@@ -120,7 +118,7 @@
         list-style: none;
         align-items: center;
         width: fit-content;
-        color: white;
+        color: #fafaf2;
         height: 100vh;
         width: 100vw;
         transition: all 0.8s ease-in-out;
@@ -152,11 +150,13 @@
                 color: var(--text-color-secondary) !important;
     
                 li {
-                    color: #fafaf2;
-                    text-shadow: 4px 4px #c09bd8;
                     transition: all 0.5s ease-in-out;
                     font-weight: 700;
-                    
+
+                     a{
+                        color: var(--text-color-secondary) !important;
+
+                     }
                 }
     
                 li:hover {
@@ -180,14 +180,14 @@
                 padding-top: 2rem;
     
                 .iconOne {
-                    color: #7fffd4;
+                    color: #fa1484;
                 }
     
                 .iconTwo {
-                    color: #84d6eb;
+                    color: #fa1484;
                 }
                 .iconThree {
-                    color: #c09bd8;
+                    color: #fa1484;
                 }
             }
         }

@@ -16,35 +16,34 @@
 
 .landingTagline {
   display: flex;
-  transform: rotate(-6deg);
+  // transform: rotate(-6deg);
   flex-direction: column;
   text-align: center;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  // overflow: hidden;
-  // width: 80vw;
   margin: 1em;
   
 
   .textUpper {
         color: #fafaf2;
       // text-shadow: 5px 5px aquamarine;
-        text-shadow: 2px 2px rgb(39, 39, 39);
+        text-shadow: 2px 2px #32373B;
   }
 
   .textUpper, .textGradient {
       font-size: 14vh;
-      letter-spacing: 0.5rem;
+      // letter-spacing: 0.5rem;
       transform: skew(-10deg);
       overflow: hidden;
       width: min-content;
+      font-weight: 700;
       // font-weight: 600;
   }
 
   .textGradient {
       position: fixed;
-      top: 5%;
-      left:0.5%;
+      top: 3%;
+      left:2%;
       background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
       -webkit-background-clip: text;
       background-clip: text;

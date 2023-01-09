@@ -1,5 +1,5 @@
 .aboutWrapper {
-    background-color: #fafaf2;
+    background-color: white;
     width: 100%;
     display: flex;
     align-items:center;
@@ -22,13 +22,10 @@
 
 
         .pageHeading {
-            transform: rotate(-6deg);
+            // transform: rotate(-6deg);
 
             h1 {
-                // font-family: var(--text-font-body);
-                color: #32373B;
-                text-shadow: 4px 4px #AFD2E9;
-                transform: skew(-10deg);
+            
             }    
         }
 

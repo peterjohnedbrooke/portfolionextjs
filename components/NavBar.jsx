@@ -48,7 +48,7 @@ export default function NavBar({ logos }) {
                     </Link>
                 </div>
             </div> */}
-            {/* <div className={click || navColor ? styles.brandMove : styles.brand}><h5>PJE Web Dev</h5></div> */}
+            <div className={click || navColor ? styles.brandMove : styles.brand}><h4>pje.</h4></div>
             <div className={styles.navContainer}>
                 <div className={!!click ? `${styles.burgerIconCross} ` : `${styles.burgerIcon} `} onClick={handleClick}>
                     <Hamburger size={25} className={styles.burgerInner} toggled={isOpen} rounded toggle={setOpen} />

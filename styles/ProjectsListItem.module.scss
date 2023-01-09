@@ -11,18 +11,15 @@
 
         .textGradientStatic {
             position: fixed;
-            top: 0%;
-            left: 0%;
-            z-index: -1;
-            color: #AFD2E9;
-            
+            top: 0;
+            left: 0;
+            z-index: -1;         
         }
 
         .textGradientMove {
             position: fixed;
             top: 0%;
             left: 20%;
-            color: #AFD2E9;
             // background:  linear-gradient(79deg, #7fffd4 0%, #84d6eb 69%, #c09bd8 95%);
             // -webkit-background-clip: text;
             // background-clip: text;
@@ -30,6 +27,7 @@
             z-index: -1;
             opacity: 0.9;
             width: max-content;
+            color: #fa1484;
         }
 
         .textUpper, .textGradientStatic, .textGradientMove {
@@ -41,10 +39,7 @@
         }
 
         .textUpper {
-            color: #32373B;
             transition: all ease-in-out 0.5s;
-            text-shadow: 4px 4px #AFD2E9;
-
         }
     }
 }
