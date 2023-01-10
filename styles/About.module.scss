@@ -1,5 +1,6 @@
 .aboutWrapper {
-    background-color: white;
+    background-color: var(--background-color-primary);
+    background-image: var(--background-gradient);
     width: 100%;
     display: flex;
     align-items:center;

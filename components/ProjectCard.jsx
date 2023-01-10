@@ -15,7 +15,7 @@ export default function ProjectCard({ project }) {
                 </Card.ImgOverlay>
             </Card>
             <div className={styles.cardInfo}>
-                <h2>{project.fields.title}</h2>
+                <h1>{project.fields.title}</h1>
                 <p>{project.fields.content}</p>
                 <Link href={link} target="_blank" rel="noopener noreferrer">
                     <button>View</button>

@@ -8,8 +8,12 @@ body {
   font-family: var(--text-font-header) !important;
   --text-font-header: 'Open Sans', sans-serif;
   --text-font-body: 'Source Sans', sans-serif;
-  --text-color-secondary: white !important;
-  --text-color-primary: black !important;
+  --text-color-primary: white !important;
+  --text-color-tertiary: #1F2232 !important;
+  --text-color-secondary: black !important;
+  --background-color-primary: #FF9A8B;
+  --background-gradient: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+  ;
   scroll-behavior: smooth;
 }
 
