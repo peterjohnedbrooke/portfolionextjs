@@ -1,12 +1,18 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 @import url('bootstrap/dist/css/bootstrap.min.css'); 
 
+@font-face {
+  font-family: Semiotic;
+  src: url("../public/fonts/Semiotic.otf");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: var(--text-font-header) !important;
-  --text-font-header: 'Open Sans', sans-serif;
+  // --text-font-header: 'Open Sans', sans-serif;
+  --text-font-header: 'Semiotic';
   --text-font-body: 'Source Sans', sans-serif;
   --text-color-primary: white !important;
   --text-color-tertiary: #1F2232 !important;
