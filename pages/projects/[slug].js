@@ -35,12 +35,16 @@ export async function getStaticProps({params}) {
 
 export default function Project({project}) {
     return (
-      <div className={styles.projectWrapper}>
+      <>
         <Head>
+          <title>Projects</title>
         </Head>
-        <div className={styles.projectContent}>
-          <ProjectCard project={project} />
+        <div className={styles.background}></div>
+        <div className={styles.projectWrapper}>
+          <div className={styles.projectContent}>
+            <ProjectCard project={project} />
+          </div>
         </div>
-      </div>
+      </>
     );
 }

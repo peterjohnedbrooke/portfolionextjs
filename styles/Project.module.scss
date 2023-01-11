@@ -1,20 +1,35 @@
+.background {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  // filter: contrast(0.5);
+  background-color: var(--background-color-primary);
+  background-image: var(--background-gradient);
+
+}
+
 .projectWrapper {
-    height: 100vh;
-    width: 100vw;
-    background-color: var(--background-color-primary);
-    background-image: var(--background-gradient);
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
   
       .projectContent {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 80vw;
-        height: 100vh;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // flex-direction: column;
+        // width: 80vw;
+        // height: 100%;
         margin-top: 100px;
       } 
 }

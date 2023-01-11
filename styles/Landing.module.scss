@@ -6,7 +6,6 @@
     justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -1;
     position: fixed;
     // filter: contrast(0.5);
     background-color: var(--background-color-primary);
@@ -35,17 +34,21 @@
 
         h1 {
             text-shadow: 2px 2px var(--text-color-tertiary);
+            padding: 5px;
         }
         
         h2 {
+            padding: 5px;
             font-size: 15vh;
         }
 
         h3 {
+            padding: 5px;
             font-size: 10vh;
         }
 
         .pinkText {
+            transition: all ease-in-out 1s;
             color: var(--text-color-tertiary);
             text-shadow: 2px 2px var(--text-color-primary);
 

@@ -28,9 +28,10 @@ export default function NavBar({ logos }) {
 
     const [isOpen, setOpen] = useState(false);
     const [navColor, setNavColor] = useState(false);
+
     useEffect(() => {
         const changeColor = () => {
-            if (window.scrollY >= 90) {
+            if (window.scrollY >= 100) {
                 setNavColor(true)
             } else {
                 setNavColor(false)

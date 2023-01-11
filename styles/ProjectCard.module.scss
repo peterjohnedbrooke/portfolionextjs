@@ -1,74 +1,48 @@
 .card {
     transition: all 500ms;
-    border-radius: 0px;
-    background-color: transparent;
     display: flex;
     flex-direction: column;
     gap: 2em;
+    width: 80vw;
+    max-width: 1000px;
+    margin: 1em;
 
-    
-    .image {
-      height: 100%;
-    }
-  
-    .cardBack {
+    .areaOne {
       display: flex;
-      align-self: center;
-      overflow: hidden;
-      margin: 1em;
-      width: 40%;
+      gap: 2em;
+      border-bottom: 3px solid white;
+
+      .image {
+        height: 300px;
+        width: 500px;
+        // width: 50%;
+        transition: transform .5s ease;
+        overflow: hidden;
+      }
+
+      .image:hover{
+        opacity: 1;
+        height: 300px;
+        width: 500px;
+        transform: scale(1.2);
+        overflow: hidden;
+      }
     }
-  
-    .cardBack img {
-      transition: transform .5s ease;
-      position: relative;
-      filter: contrast(115%);
-    }
-  
-    .cardBack:hover img {
-      opacity: 1;
-      transform: scale(1.2);
-      overflow: hidden;
-    }
-  
-    .imageOverlay {
+
+    .areaTwo {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 2s ease;
-      border-radius: 5px !important;
+      flex-direction: row; 
+      gap: 2em;
+
+      h1 {
+        color: var(--text-color-secondary);
+      }
+
+      p {
+        align-self: center;
+      }
     }
 
-    .overlayText {
-      font-size: 3vh;
-      color: var(--text-color-primary);
-      align-self: center;
-    }
   
-    .cardInfo {
-        margin: 1.5em;
-        // width: 60%;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
 
-
-        h1 {
-          color: #fa1484;
-        }
-
-        p {
-            font-family: var(--text-font-body);
-            color: var(--text-color-primary);
-        }
-
-        button {
-            padding: 1em;
-            background-color: transparent;
-            font-family: var(--text-font-body);
-            font-style: italic;
-            color: var(--text-color-tertiary);
-            font-weight: 700;
-        }
-    }
 }    

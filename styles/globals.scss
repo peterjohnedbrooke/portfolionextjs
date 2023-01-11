@@ -13,7 +13,7 @@ body {
   font-family: var(--text-font-header) !important;
   // --text-font-header: 'Open Sans', sans-serif;
   --text-font-header: 'Semiotic';
-  --text-font-body: 'Source Sans', sans-serif;
+  --text-font-body: 'Playfair Display', serif;
   --text-color-primary: white !important;
   --text-color-tertiary: #1F2232 !important;
   --text-color-secondary: black !important;
@@ -29,6 +29,12 @@ h1 {
 h1, h2, h3, h4, h5 {
   color: var(--text-color-primary);
   font-weight: 700;
+}
+p {
+  // font-size: 3vh;
+  font-weight: 500;
+  // font-style: italic;
+  font-family: var(--text-font-body);
 }
 
 a {
