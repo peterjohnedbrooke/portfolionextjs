@@ -26,7 +26,6 @@ export default function Landing({ landingImg }) {
                         <LandingHoverText link="/about" text="Online." textHover="About." />
                     </div>
                 </div>
-                <div></div>
             </div>
         </>
 

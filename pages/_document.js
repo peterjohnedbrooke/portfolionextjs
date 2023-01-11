@@ -19,7 +19,7 @@ export default function _document() {
 
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"></link>
-        <link rel="preload" href="/fonts/Semiotic.wotf" as="font" type="font/otf" crossOrigin="" />
+        {/* <link rel="preload" href="/fonts/Semiotic.wotf" as="font" type="font/otf" crossOrigin="" /> */}
         
       </Head>
       <body>
