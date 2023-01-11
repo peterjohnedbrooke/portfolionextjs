@@ -13,7 +13,11 @@ export default function LandingHoverText({text, link, textHover}) {
 
   return (
     <Link href={link}>
-        <h1 onMouseEnter={(e) => handleHoverText()} onMouseLeave={(e) => handleHoverText()} className={text == "Online." ? `${styles.pinkText}` : null}>{!!hoverText ? textHover : text}</h1>
+        {text == "Design" || text == "Projects" ?
+            <h2 onMouseEnter={(e) => handleHoverText()} onMouseLeave={(e) => handleHoverText()} className={text == "Online." ? `${styles.pinkText}` : null}>{!!hoverText ? textHover : text}</h2>
+            :
+            <h1 onMouseEnter={(e) => handleHoverText()} onMouseLeave={(e) => handleHoverText()} className={text == "Online." ? `${styles.pinkText}` : null}>{!!hoverText ? textHover : text}</h1>
+        }
     </Link>
   )
 }

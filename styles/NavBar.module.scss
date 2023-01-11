@@ -1,6 +1,6 @@
 .navWrapperScroll {
     background-color: transparent;
-    height: 150px;
+    height: 100px;
     width: 100vw;
     margin: auto auto;
     position: fixed;
@@ -10,14 +10,14 @@
     
 }
 .navWrapper, .navWrapperScroll {
-    height: 150px;
+    height: 100px;
     width: 100vw;
     margin: auto auto;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3em;
+    padding: 2em;
     z-index: 999;
     max-width: 100%;
 
@@ -34,7 +34,8 @@
         h4 {
             font-size: 40px;
             color: var(--text-color-tertiary);
-
+            padding: 0;
+            margin: 0;
         }
     }
 
