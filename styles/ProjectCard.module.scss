@@ -13,19 +13,18 @@
       border-bottom: 3px solid white;
 
       .image {
-        height: 300px;
-        width: 500px;
-        // width: 50%;
         transition: transform .5s ease;
         overflow: hidden;
+        // padding: 2rem;
+        padding-bottom: 1rem;
       }
 
       .image:hover{
-        opacity: 1;
-        height: 300px;
-        width: 500px;
-        transform: scale(1.2);
-        overflow: hidden;
+        // opacity: 1;
+        // height: 300px;
+        // width: 500px;
+        // transform: scale(1.2);
+        // overflow: hidden;
       }
     }
 
@@ -43,6 +42,18 @@
       }
     }
 
-  
-
 }    
+
+@media (max-width: 600px) {
+  .card {
+    margin-top: 100px;
+
+    .areaOne, .areaTwo {
+      flex-direction: column;
+
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+}
